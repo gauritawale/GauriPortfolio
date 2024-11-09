@@ -1,0 +1,284 @@
+body {
+    background-color: transparent; 
+    font-family: 'Arial', sans-serif; 
+    text-align: center; 
+}
+
+
+
+.h12 {
+    font-weight: bold;
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-fill-color: transparent; /* Fill color */
+    font-size: 90px; /* Adjust font size */
+    animation: animateH1 5s ease-in-out infinite; /* Apply animation */
+    font-style: italic !important;
+        text-align: center; 
+
+
+}
+@media(max-width:667px){
+    .h12{
+        font-size: 50px; /* Adjust font size */
+        
+
+
+    }
+}
+
+@keyframes animateH1 {
+    0% {
+        opacity: 0; /* Start invisible */
+        transform: translateY(-20px); /* Start slightly above */
+    }
+    50% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to normal position */
+    }
+    100% {
+        opacity: 0; /* Fade out */
+        transform: translateY(20px); /* Move slightly down */
+    }
+}
+
+.h11 {
+    font-size: 100px; /* Adjust font size */
+    font-weight: 800;
+    font-family: 'Barlow', sans-serif;
+    -webkit-text-fill-color: transparent;
+    z-index: 987865;
+    text-align: center;
+    text-shadow: 2px 0px 0px rgb(66, 44, 233) !important;
+    animation: animateH11 5s ease-in-out infinite; /* Apply animation */
+}
+
+
+
+
+@keyframes animateH11 {
+    0% {
+        opacity: 0; /* Start invisible */
+        transform: scale(1); /* Start slightly smaller */
+    }
+    50% {
+        opacity: 1; /* Fully visible */
+        transform: scale(1); /* Normal size */
+    }
+    100% {
+        opacity: 0; /* Fade out */
+        transform: scale(1.1); /* Slightly larger at end */
+    }
+}
+
+/* Animation for the header title */
+.animate-title {
+color: #ff6600;
+animation: bounceIn 1.5s ease-in-out;
+}
+
+/* Keyframe animations */
+@keyframes bounceIn {
+0% {
+    transform: scale(0.5);
+    opacity: 0;
+}
+60% {
+    transform: scale(1.2);
+}
+100% {
+    transform: scale(1);
+    opacity: 1;
+}
+}
+
+@keyframes fadeIn {
+0% {
+    opacity: 0;
+    transform: translateY(20px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+@keyframes fadeInText {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+
+
+
+
+
+/* Name and role animations */
+.animate-name {
+font-weight: bold;
+color: #333;
+animation: fadeIn 1.5s ease-in-out;
+}
+
+.animate-role {
+font-size: 1.2rem;
+color: #666;
+animation: fadeIn 1.8s ease-in-out;
+}
+
+/* Link hover effects */
+.email-link, .social-link {
+text-decoration: none;
+color: #007bff;
+position: relative;
+}
+
+.email-link:hover, .social-link:hover {
+color: #ff6600;
+}
+
+.email-link::before, .social-link::before {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: #ff6600;
+visibility: hidden;
+transition: all 0.3s ease-in-out;
+}
+
+.email-link:hover::before, .social-link:hover::before {
+visibility: visible;
+width: 100%;
+}
+
+/* Text highlight colors */
+.highlight-orange {
+color: orange;
+animation: highlight 1s infinite alternate;
+}
+
+.highlight-blue {
+color: blue;
+}
+
+.highlight-green {
+color: green;
+}
+
+.highlight-red {
+color: red;
+}
+
+/* Keyframe for highlight animation */
+@keyframes highlight {
+0% {
+    text-shadow: 1px 1px 10px #ff6600;
+}
+100% {
+    text-shadow: 1px 1px 20px #ff6600;
+}
+}
+
+/* Profile text fade-in effect */
+.profile-text {
+font-size: 1.1rem;
+line-height: 1.6;
+}
+
+/* Animation keyframes for fade-in and zoom effect */
+@keyframes fadeInZoom {
+0% {
+    opacity: 0;
+    transform: scale(0.8);
+}
+100% {
+    opacity: 1;
+    transform: scale(1);
+}
+}
+
+/* Apply the animation to images inside the modal */
+.modal-body img {
+animation: fadeInZoom 0.8s ease-in-out;
+opacity: 0; /* Initial state for the animation */
+}
+
+/* Fade-in images on modal display */
+.modal.show .modal-body img {
+opacity: 1;
+}
+
+.offcanvas-start {
+transition: transform 0.6s ease-in-out;
+}
+
+.offcanvas.show {
+transform: translateX(0);
+}
+
+.offcanvas-start {
+transform: translateX(-100%);
+}
+
+/* Add animation to images */
+.img-container figure img {
+opacity: 0;
+transform: translateY(50px);
+transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.img-container figure img.show {
+opacity: 1;
+transform: translateY(0);
+}
+
+@media(max-width:667px){
+
+.skills{
+    margin-left:0px !important;
+}
+.skill2{
+    margin-left:0px !important;
+    margin-top:0px !important;
+}
+.skillss{
+    margin-left:0px !important;
+}
+
+.skill-container{
+    padding-left:0px !important;
+}
+.certify{
+    height: 60% !important;
+    width: 60% !important;
+}
+}
+
+.certificate-img {
+opacity: 0; /* Start hidden */
+transform: scale(0.8); /* Start slightly smaller */
+transition: opacity 0.5s ease, transform 0.5s ease; /* Transition effects */
+}
+
+.collapse.show .certificate-img {
+opacity: 1; /* Fully visible */
+transform: scale(1); /* Full size */
+}
+
+.certificate-img {
+opacity: 0; /* Start hidden */
+transform: scale(0.8); /* Start slightly smaller */
+transition: opacity 0.5s ease, transform 0.5s ease; /* Transition effects */
+}
+
+.collapse.show .certificate-img {
+opacity: 1; /* Fully visible */
+transform: scale(1); /* Full size */
+}
