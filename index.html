@@ -20,19 +20,67 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <style type="text/css">
-        * {
-            font-style: normal;
-            font-family: Verdana, Arial, Helvetica, sans-serif;
-        }
-
-        .navbar-brand-logo {
-            box-shadow: 5px 5px 0px 0px rgb(0,150,136);
-        }
-    </style>
 </head>
 
 <body>
+
+<header class="mt-0">
+    <div class="container-fluid">
+        <div class="row bg-light py-2">
+
+            <div class="col-md-9 d-flex flex-wrap">
+                <ul class="d-flex align-items-center text-secondary me-4" style="list-style-type: none;">
+                    <li class="pt-2 pb-0 fs-5 me-2">
+                        <ion-icon name="navigate-circle-outline"></ion-icon>
+                    </li>
+                    <li class="pt-2 pb-0 fs-6">Jeur(Ba), Ahmednagar, 414601</li>
+                </ul>
+
+                <ul class="d-flex align-items-center text-secondary me-4" style="list-style-type: none;">
+                    <li class="pt-2 pb-0 fs-5 me-2">
+                        <ion-icon name="call"></ion-icon>
+                    </li>
+                    <li class="pt-2 pb-0 fs-6">
+                        <a href="tel:+918766778916" class="text-decoration-none text-secondary">+91 8766778916</a>
+                    </li>
+                </ul>
+
+                <ul class="d-flex align-items-center text-secondary" style="list-style-type: none;">
+                    <li class="pt-2 pb-0 fs-5 me-2">
+                        <ion-icon name="mail"></ion-icon>
+                    </li>
+                    <li class="pt-2 pb-0 fs-6">
+                        <a href="mailto:gauritawale04@gmail.com" class="text-decoration-none text-secondary">gauritawale04@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 d-flex justify-content-end align-items-center fs-4">
+    <ul class="d-flex" style="list-style-type: none;">
+        <li>
+            <a href="https://www.linkedin.com/in/gauri-tawale-gauritawale/?locale=en_US" class="icon text-secondary ms-4 mt-5">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+        </li>
+        <li>
+            <a href="https://wa.me/918766778916" target="_blank" class="icon text-secondary ms-4 mt-5">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/gauritawale" class="icon text-secondary ms-4 me-5 mt-5">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+        </div>
+    </div>
+</header>
+
 
 
     <main>
@@ -48,21 +96,36 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item ms-5">
-                        <a class="nav-link fs-5 ms-3" href="#">Home</a>
+                        <a class="nav-link fs-5 ms-3" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 ms-3" href="#">About</a>
+                        <a class="nav-link fs-5 ms-3" href="#about">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5 ms-3" href="#">Projects</a>
+
+
+                     <li class="nav-item">
+                        <a class="nav-link fs-5 ms-3" href="#skill">Skills</a>
                     </li>
+
+                     <li class="nav-item">
+                        <a class="nav-link fs-5 ms-3" href="#experience">Experience</a>
+                    </li>
+
                     <li class="nav-item">
-                        <a class="nav-link fs-5 ms-3" href="#">Certificates</a>
+                        <a class="nav-link fs-5 ms-3" href="#project">Projects</a>
+                    </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link fs-5 ms-3" href="#demo">Demo's</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 ms-3" href="#certificate">Certificates</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link fs-5 ms-3" href="#">
+                        <a class="nav-link fs-5 ms-3" href="#contact">
                             <ion-icon name="person"></ion-icon> Contact
                         </a>
                     </li>
@@ -71,12 +134,15 @@
         </div>
     </nav>
 </main>
-<section style="overflow:hidden">
+
+<section id="home" style="overflow:hidden">
     <div class="container-fluid main" style="overflow:hidden">
         <div class="row mt-3">
             <div class="col-md-12 mt-5">
-                    <h2 class="h11">Gauri</h2>
+                    <h2 class="h11">Gauri
                     <h1 class="h12"><span style="text-shadow: 2px 0px 0px rgb(7, 39, 204)">Full Stack Python </span><span style="text-shadow: 2px 0px 0px rgb(15, 3, 82)">Developer</span></h1>
+
+
                     
             </div>
         </div>
@@ -84,7 +150,7 @@
 </section>
 
 
-<section style="overflow:hidden">
+<section  style="overflow:hidden">
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-12" style="overflow:hidden">
@@ -95,37 +161,28 @@
 </section>
 
 
-<section style="overflow:hidden">
-    <div class="container">
+<section id="about" style="overflow:hidden">
+    <div class="container mb-5">
         <div class="row">
+                <div class="col-md-12">
             <h3 class="mt-5 animate-title text-center text-center">👩🏼‍💻Personal Profile</h3>
             <p class="text-center text-secondary mt-3 mt-3" style="color:#e6a466">"My personal profile which can be describes me"</p>
+        </div>
+    </div>
 
+    <div class="row">
+        <div class="col-md-12 text-center">
+                <h3 class="text-warning">Gauri Tawale</h3>
+                <p class="fs-5">Full Stack Python Developer</p>
+                <p class="text-center">( March 2024 - September 2024)</p>
 
-            <div class="col-md-6">
-           
-                <div class="row">
-                    <div class="col-md-12 mt-2">
-                        <!-- <img src="img/gauri.jpg" width="30%" class="img-fluid mt-3 rounded shadow-lg rounded mt-5  shadow me-3 profile-pic"> -->
+        </div>
+            
+    </div>
 
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="profile-info mt-5">
-                                <h2 class="animate-name">Tawale Gauri Kailas</h2>
-                                <p class="animate-role">Full Stack Python Developer</p>
-                                <p class="text-secondary">Email: <a href="mailto:gauritawale04@gmail.com" class="email-link text-warning">gauritawale04@gmail.com</a></p>
-                                <p class="text-secondary">LinkedIn: <a href="https://www.linkedin.com/in/gauri-tawale-gauritawale/" target="_blank" class="social-link text-warning">LinkedIn Profile</a></p>
-                                <p class="text-secondary">Github: <a href="https://github.com/gauritawale" target="_blank" class="social-link text-warning">GitHub Profile</a></p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-md-6">
-                <p id="aboutText" class="mt-5" style="text-align:justify">
+    <div class="row">
+        <div class="col-md-12 text-center">
+                 <p id="aboutText" class="mt-2" style="text-align:justify">
                     Hello,  I'm <font color="orange">`Gauri Tawale`</font>, a passionate Front End developer with a deep love for frontend technologies. 
                     I also gain knowledge about backend technologies. Through dedicated learning and hands-on experience, 
                     I can develop my skills and transform my passion into a career.<br><br>
@@ -149,14 +206,15 @@
                 </p>
                 <button id="readMoreBtn" class="btn btn-warning text-white mt-3 " style="cursor:pointer;">More About Me |→</button>
 
-
-            </div>
         </div>
     </div>
+
+
 </section>
 
 
-<section style="overflow:hidden">
+
+<section id="skill" style="overflow:hidden">
     <div class="row">
         <div class="col-md-12 mt-3">
             <h3 class="mt-5 animate-title text-center">🔦Skills</h3>
@@ -295,7 +353,7 @@
 
 
 
-<section style="overflow:hidden">
+<section id="experience" style="overflow:hidden">
     <div class="container">
         <div class="row">
             <div class="col-md-12 mt-3">
@@ -309,9 +367,9 @@
 
         <div class="row mt-5">
             <div class="col-md-3">
-                <p class="text-warning ms-5">15/01/2024 - 01/03/2024</p>
+                <p class="text-warning ms-5 text-center">15/01/2024 - 01/03/2024</p>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 text-center">
                 <p class="text-secondary">Frontend Developer Intern - A2Z Infotech & A2Z IT Hub Pvt. Ltd.</p>
                 <button class="btn btn-warning text-white" id="toggle-details-1">Show in details |→</button>
 
@@ -326,10 +384,10 @@
 
         <!-- Second Experience -->
         <div class="row mt-3">
-            <div class="col-md-3">
+            <div class="col-md-3 ">
                 <p class="text-warning ms-5">05/03/2024 - 30/09/2024</p>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 text-center">
                 <p class="text-secondary">Full Stack Python Developer - A2Z Infotech & A2Z IT Hub Pvt. Ltd.</p>
                 <button class="btn btn-warning text-white" id="toggle-details-2">Show in details |→ </button>
 
@@ -345,7 +403,7 @@
 </section>
 
 
-<section style="overflow:hidden">
+<section id="project" style="overflow:hidden">
     <div class="container">
         <div class="row">
             <div class="col-md-12 mt-3">
@@ -467,7 +525,7 @@
     </div>
     
     
-<div class="container">
+<div id=demo class="container">
     <div class="row">
         <h3 class="mt-5 animate-title text-center">💡 Demo's</h3>
         <p class="text-center text-secondary mt-3" style="color:#e6a466">
@@ -529,7 +587,7 @@
 
 
 
-<section style="overflow:hidden">
+<section id="certificate" style="overflow:hidden">
     <div class="container">
     <div class="row">
         <div class="col-md-12 mt-3">
@@ -569,7 +627,10 @@
 </div>
 </section>
 
-<section style="overflow: hidden;">
+
+
+
+<section id="contact" style="overflow: hidden;">
     <div class="container">
         <div class="row">
             <div class="col-md-12 mt-3">
@@ -581,7 +642,7 @@
             </div>
         </div>
 
-        <div class="row bg-warning mt-4 rounded shadow-lg">
+        <div class="row bg-warning mt-4 rounded shadow-lg pb-4">
             <div class="col-md-6">
                 <img src="img/contact.gif" height="100%" width="100%" class="img-fluid pt-5">
 
@@ -632,9 +693,12 @@
 
                 <div class="row mt-2">
                     <div class="col-md-4 d-flex align-items-center">
-                        <a href="c:\Users\gauri\OneDrive\Desktop\Gauri Tawale .pdf" download="Gauri_Tawale_Resume.pdf">
+                        <a href="img/Gauri Tawale .pdf" download="Gauri_Tawale_Resume.pdf">
                             <button class="btn  text-warning bg-white"><ion-icon name="document-outline" class="me-2 text-warning"></ion-icon>Resume</button>
-                        </a>                    </div>
+                        </a> 
+
+
+                </div>
                 </div>
                 
                 
@@ -645,6 +709,82 @@
         
     </div>
 </section>
+
+
+<section style="overflow:hidden;">
+    <div class="container-fluid bg-dark mt-3 pb-0 mb-0">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="text-light fst-italic pt-2 mt-5">Copyright © 2024 Gauri Tawale</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="ms-2">
+                        <a href="https://wa.me/8766778916" target="_blank" class="text-white footer-icon">
+                            <ion-icon name="logo-whatsapp" class="fs-3"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="ms-2">
+                        <a href="https://www.linkedin.com/in/gauri-tawale-gauritawale/" target="_blank" class="text-white footer-icon">
+                            <ion-icon name="logo-linkedin" class="fs-3"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="ms-2">
+                        <a href="https://github.com/gauritawale" target="_blank" class="text-white footer-icon">
+                            <ion-icon name="logo-github" class="fs-3"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="ms-2">
+                        <a href="mailto:gauritawale04@gmail.com" class="text-white footer-icon">
+                            <ion-icon name="mail" class="fs-3"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="ms-2">
+                        <a href="tel:+8766778916" class="text-white footer-icon">
+                            <ion-icon name="tablet-portrait" class="fs-3"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-11"></div>
+            <div class="col-md-1 text-end mb-5 pe-5 pb-5 mb-5">
+                <button id="scrollTopBtn" class="btn btn-white bg-white text-dark border-0 rounded p-2">
+                    <ion-icon name="caret-up" class="fs-6"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+    // Scroll to top functionality
+    document.getElementById('scrollTopBtn').addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+
+
+
+
+<script>
+    // Automatically sets the current year
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
+</section>
+
+
+
+
 
 
 <script>
@@ -732,11 +872,7 @@
         });
     </script>
 
-    <script>
-        AOS.init({
-          once: true  // Ekdaach run honar
-        });
-      </script>
+    
 
       <script type="text/javascript">
     AOS.init();
@@ -746,4 +882,6 @@
 </body>
 
 </html>
+
+
 
