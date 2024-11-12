@@ -312,3 +312,15 @@ transform: scale(1); /* Full size */
         transform: scale(1.2);
         transition: transform 0.3s ease;
     }
+
+
+    
+    @media(max-width:667px){
+
+        .girl-img{
+            margin:0px !important;
+            width:100% !important;
+        }
+        
+    }
+   
