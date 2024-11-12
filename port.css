@@ -6,6 +6,31 @@ body {
 
 }
 
+.nav-link{
+    text-decoration: none; /* pehle underline hatawe */
+    color: black; /* original color set kela */
+    position: relative; /* underline sathi */
+  }
+  
+  .nav-link::after {
+    content: ""; 
+    position: absolute;
+    width: 100%;
+    height: 2px; /* underline height */
+    left: 0;
+    bottom: -2px; /* underline thodi khali set keli */
+    background-color: orange;
+    transform: scaleX(0); /* pehle zero scale set kela */
+    transform-origin: left;
+    transition: transform 0.3s ease; /* animation effect */
+  }
+  
+  .nav-link:hover::after {
+    transform: scaleX(1); /* hover jhalyavar underline full hotil */
+    
+    
+  }
+
 .icon:hover{
     background-color:F89809 !important;
     color: white !important;
