@@ -398,6 +398,8 @@ transform: scale(1); /* Full size */
         animation: pulseEffect 2s ease-in-out infinite; /* Adjust duration for faster or slower pulse */
         transform-origin: center;
     }
+
+    
     
     
     
