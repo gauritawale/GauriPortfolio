@@ -359,7 +359,7 @@ transform: scale(1); /* Full size */
     }
     
     .about-container {
-        background: linear-gradient(135deg, #f0e8cd, #e0d7d4, #eadfb8, #efe4dc);
+        background: linear-gradient(135deg, #efefee, #969494, #efefee, #969494);
         background-size: 200% 200%;
         animation: gradientAnimation 2s ease infinite;
         padding: 20px;
