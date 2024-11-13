@@ -3,6 +3,7 @@ body {
     font-family: 'Arial', sans-serif; 
     text-align: center; 
     margin: 0px;
+    font-style: italic;
 
 }
 
@@ -348,4 +349,33 @@ transform: scale(1); /* Full size */
         }
         
     }
+
+ 
+
+    @keyframes gradientAnimation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    
+    .about-container {
+        background: linear-gradient(135deg, #f0e8cd, #e0d7d4, #eadfb8, #efe4dc);
+        background-size: 200% 200%;
+        animation: gradientAnimation 2s ease infinite;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    #aboutText {
+        color: #333;
+    }
+    
+    #readMoreBtn {
+        margin-top: 15px;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    
    
