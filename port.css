@@ -360,7 +360,7 @@ transform: scale(1); /* Full size */
     }
     
     .about-container {
-        background: linear-gradient(135deg, #efefee, #969494, #efefee, #969494);
+        /* background: linear-gradient(135deg, #171715, #fbfafa, #3e3e3d, #f4f1f1); */
         background-size: 200% 200%;
         animation: gradientAnimation 2s ease infinite;
         padding: 20px;
@@ -397,6 +397,28 @@ transform: scale(1); /* Full size */
     .svg-icon2 {
         animation: pulseEffect 2s ease-in-out infinite; /* Adjust duration for faster or slower pulse */
         transform-origin: center;
+    }
+
+
+
+    .experience{
+        box-shadow: 0px 0px 5px 0px gray;
+        padding-bottom: 60px;
+        border-radius: 20px;
+    }
+    .skill-container{
+        box-shadow: 0px 0px 5px 0px gray !important;
+        padding-bottom: 60px !important;
+        border-radius: 20px !important;
+
+        
+    }
+
+
+    .project{
+        box-shadow: 0px 0px 5px 0px gray;
+        padding-bottom: 60px;
+        border-radius: 20px;
     }
 
     
