@@ -226,7 +226,7 @@
                 "Skilled in creating dynamic, responsive web applications that deliver seamless cross-device experiences."            </p>
         </div>
     </div>
-    <div class="container  mt-5 pb-2 mb-4 shadow-lg " style="padding-left:75px">
+    <div class="container skill-padding  mt-5 pb-2 mb-4 shadow-lg " style="padding-left:75px">
       
         <div class="row">
             <div class="col-md-6 mt-5 d-flex">
@@ -421,10 +421,10 @@
 
         <div class="row">
             <div class="col-md-6" style="margin-top:40px">
-                <img src="img/project.png" height="400px" class="img-fluid mt-5">
+                <img src="img/project.png" height="100%" width="100%" class="img-fluid mt-5">
             </div>
 
-            <div class="col-md-6 mt-5">
+            <div class="col-md-6 mt-5 text-center">
                 <p class="mt-2">For Detailed Work-</p>
                 <a href="https://github.com/gauritawale">
                     <svg width="25px" height="25px" class="text-primary" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500" viewBox="0 0 256 249" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
@@ -538,11 +538,11 @@
 
 
         <div class="col-md-6 mt-5">
-            <img src="img/demo.gif" alt="Image description" class="mt-5" height="80%" width="80%" style="overflow:hidden">
+            <img src="img/demo.gif" alt="Image description" class="demo_images" height="100%" width="120%" style="overflow:hidden">
 
         </div>
-        <div class="col-md-6 mt-5 ">
-            <button class="btn btn-warning text-white" style="margin-top:80px" type="button" data-bs-toggle="offcanvas" data-bs-target="#demoOffcanvas" aria-controls="demoOffcanvas">
+        <div class="col-md-6 mt-5 text-center ">
+            <button class="btn btn-warning text-white demo_button" style="margin-top:250px" type="button" data-bs-toggle="offcanvas" data-bs-target="#demoOffcanvas" aria-controls="demoOffcanvas">
                 Show Demos |→
               </button>
         </div>
@@ -594,20 +594,21 @@
 <section id="certificate" style="overflow:hidden">
     <div class="container">
     <div class="row">
-        <div class="col-md-12 mt-3">
+        <div class="col-md-12 mt-3 text-center">
             <h3 class="mt-5 animate-title text-center">🎗️ Certificates</h3>
 
             <p class="text-center text-secondary mt-3" style="color:#e6a466">
                 "Words can wait, let the certificates prove their worth."
             </p>
-            <img src="img/cetify.gif" width="50%" height="50%" class="img-fluid certify ">
+            <img src="https://cdn-icons-gif.flaticon.com/11870/11870992.gif" width="20%" height="20%" class="img-fluid certify ">
 
-            <!-- Button to toggle collapse -->
-            <div class="text-center">
-                <button class="btn btn-warning text-white mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#certificatesCollapse" aria-expanded="false" aria-controls="certificatesCollapse">
+            <div class="text-center mb-5 mt-2">
+                <button class="btn btn-warning text-white mb-5" type="button" data-bs-toggle="collapse" data-bs-target="#certificatesCollapse" aria-expanded="false" aria-controls="certificatesCollapse">
                     View Certificates |→
                 </button>
             </div>
+
+            
 
             <!-- Collapsible certificates section -->
             <div class="collapse mt-4" id="certificatesCollapse">
@@ -619,9 +620,9 @@
                         <div class="col-md-4">
                             <img src="img/css.jpg" class="img-fluid mt-4 rounded shadow border border-warning certificate-img" alt="Certificate 2">
                         </div>
-                        <div class="col-md-4">
+                        <!-- <div class="col-md-4">
                             <img src="certificate3.jpg" class="img-fluid mt-4 rounded shadow border border-warning certificate-img" alt="Certificate 3">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -653,31 +654,34 @@
             </div>
 
             <div class="col-md-6 mt-5">
-                <form>
+                <form action="https://api.web3forms.com/submit" method="POST">
                     <div class="row mt-2">
+                        <input type="hidden" name="access_key" value="d028be84-74f7-4fe7-84fd-f4b53251dff3">
+                
                         <div class="col-md-12 text-start">
-                            <label class="text-white">Enter Your Name:</label><br>
-                            <input type="text" placeholder="Enter Name" class="form-control"><br>
-
+                            <label class="text-white" for="name">Enter Your Name:</label><br>
+                            <input type="text" id="name" name="name" placeholder="Enter Name" class="form-control" required><br>
                         </div>
+                
                         <div class="col-md-12 text-start">
-                            <label class="text-white">Enter Your Email:</label><br>
-                            <input type="email" placeholder="Enter Email" class="form-control"><br>
-
+                            <label class="text-white" for="email">Enter Your Email:</label><br>
+                            <input type="email" id="email" name="email" placeholder="Enter Email" class="form-control" required><br>
                         </div>
-
+                
                         <div class="col-md-12 text-start">
-                            <label class="text-white">Message:</label><br>
-                            <textarea placeholder="Message" aria-placeholder="Enter Message" class="form-control"></textarea>
-
+                            <label class="text-white" for="message">Message:</label><br>
+                            <textarea id="message" name="message" placeholder="Enter Message" aria-placeholder="Enter Message" class="form-control" required></textarea><br>
                         </div><br>
-
+                
                         <div class="col-md-12 text-start">
-                            <button class="text-warning btn btn-light mt-4"><ion-icon name="paper-plane-outline" class="me-2"></ion-icon>Submit</button>
+                            <button type="submit" class="text-warning btn btn-light mt-4">
+                                <ion-icon name="paper-plane-outline" class="me-2"></ion-icon>Submit
+                            </button>
                         </div>
-                     
                     </div>
                 </form>
+                
+                
                 <div class="row mt-2">
                     <div class="col-md-4 d-flex align-items-center">
                         <ion-icon name="mail-outline" class="me-2 text-danger"></ion-icon>
