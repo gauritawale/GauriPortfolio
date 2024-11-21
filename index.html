@@ -557,6 +557,123 @@
             </div>
         </div>
     </div>
+
+
+    <style>
+        .counter-box {
+          background-color: #f8f9fa;
+          border-radius: 10px;
+          padding: 30px;
+          text-align: center;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease;
+        }
+      
+        .counter-box:hover {
+          transform: translateY(-10px);
+        }
+      
+        .counter-ico {
+          margin-bottom: 15px;
+        }
+      
+        .counter-ico i {
+          font-size: 40px;
+          color: #007bff;
+        }
+      
+        .counter-num p {
+          font-size: 36px;
+          font-weight: bold;
+          margin: 0;
+          color: #333;
+        }
+      
+        .counter-text {
+          font-size: 16px;
+          color: #666;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+      
+        /* Counter animation */
+        .counter {
+          animation: fadeIn 1s ease-in-out;
+        }
+      
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: scale(0.8);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+      </style>
+      
+      <div class="row" style="padding-left:200px">
+        <div class="col-sm-4 col-lg-3 mt-5 rounded   ms-4">
+          <div class="counter-box  border border-warning rounded">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="bi bi-check"></i></span>
+            </div>
+            <div class="counter-num">
+              <p id="projectCounter" class="counter">0</p>
+              <span class="counter-text">PROJECT COMPLETED</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-3 mt-5  rounded  ms-4">
+          <div class="counter-box  border border-warning rounded">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
+            </div>
+            <div class="counter-num">
+              <p id="experienceCounter" class="counter">0</p>
+              <span class="counter-text">YEARS OF EXPERIENCE</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-3 mt-5  rounded  ms-4">
+          <div class="counter-box  border border-warning rounded">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="bi bi-people"></i></span>
+            </div>
+            <div class="counter-num">
+              <p id="websiteCounter" class="counter">0</p>
+              <span class="counter-text">TOTAL Website </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+        function animateCounter(id, start, end, duration) {
+          let current = start;
+          const increment = (end - start) / (duration / 100); // Increment per 100ms
+          const counterElement = document.getElementById(id);
+      
+          const interval = setInterval(() => {
+            current += increment;
+            if (current >= end) {
+              current = end; // Ensure the value stops at the target
+              clearInterval(interval);
+            }
+            counterElement.innerText = Math.round(current); // Update the counter
+          }, 100); // Update every 100ms
+        }
+      
+        // Initialize counters
+        animateCounter("projectCounter", 0, 3, 2000); // Projects Completed: 0 to 5 in 2 seconds
+        animateCounter("experienceCounter", 0, 2, 2000); // Years of Experience: 0 to 3 in 2 seconds
+        animateCounter("websiteCounter", 0, 6, 2000); // Total Clients: 0 to 10 in 2 seconds
+      </script>
+      
+      
+      
+      
     
     
 <div id=demo class="container">
@@ -1151,6 +1268,9 @@
         }
     });
 </script>
+
+
+
 
 
   
