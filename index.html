@@ -222,42 +222,90 @@
 
 <section>
     <div class="container">
-        <div class="row">
-            
-            <div class="col-md-12">
-                <h3 class="mt-5 animate-title text-center text-center">🧑🏼‍🎓Education</h3>
-
-
-                
-            </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="mt-5 animate-title text-center ">🧑🏼‍🎓 <span class="highlight">Education</span></h3>
         </div>
-
-        <div class="row justify-content-center mt-5">
-            <!-- Post Graduation Card -->
-            <div class="col-md-4 mb-4 ">
-              <div class="card text-center p-3 shadow-lg border border-warning ms-3" style="width: 100%;">
-                <ion-icon name="bookmark" class="fs-1 text-warning" ></ion-icon>
-                                <div class="card-body">
-                  <h5 class="card-title" style="font-size: 20px;">Post Graduation<br>(2019-2022)</h5>
-                  <h6 class="card-text">Mumbai University</h6>
-                  <p class="mb-0">Passed the examination in 2022</p>
-                </div>
-              </div>
-            </div>
-        
-            <!-- Graduation Card -->
-            <div class="col-md-4 mb-4 ">
-              <div class="card text-center p-3 shadow-lg border border-warning ms-3" style="width: 100%;">
-                <ion-icon name="bookmarks" class="fs-1 text-warning"></ion-icon>
-                <div class="card-body">
-                  <h5 class="card-title" style="font-size: 20px;">Graduation<br>(2022-2025)</h5>
-                  <h6 class="card-text">Savitribai Phule Pune University</h6>
-                  <p class="mb-0">Passed the examination in 2025</p>
-                </div>
-              </div>
+      </div>
+  
+      <div class="row justify-content-center mt-5">
+        <!-- Post Graduation Card -->
+        <div class="col-md-4 mb-4">
+          <div class="card education-card text-center p-4 shadow-lg border-0">
+            <ion-icon name="bookmark" class="fs-1 icon"></ion-icon>
+            <div class="card-body">
+              <h5 class="card-title">Post Graduation<br>(2019-2022)</h5>
+              <h6 class="card-text">Mumbai University</h6>
+              <p class="mb-0 text-muted">Passed the examination in 2022</p>
             </div>
           </div>
-</section>
+        </div>
+  
+        <!-- Graduation Card -->
+        <div class="col-md-4 mb-4">
+          <div class="card education-card text-center p-4 shadow-lg border-0">
+            <ion-icon name="bookmarks" class="fs-1 icon"></ion-icon>
+            <div class="card-body">
+              <h5 class="card-title">Graduation<br>(2022-2025)</h5>
+              <h6 class="card-text">Savitribai Phule Pune University</h6>
+              <p class="mb-0 text-muted">Passed the examination in 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+  /* Card Styling */
+  .education-card {
+    background: #ffffff;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .education-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .education-card h5 {
+    font-size: 1.5rem;
+    color: #e7b052;
+    font-weight: 600;
+  }
+  
+  .education-card h6 {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .education-card p {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Icon Styling */
+  .icon {
+    color: #efb358;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-size:35px;
+  }
+  
+  .education-card:hover .icon {
+    transform: scale(1.2);
+    color: #fadd6b;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .education-card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  </style>
 
 
 
@@ -672,11 +720,12 @@
         </div>
       </div>
       
-      <div class="row counter" style="padding-left:200px">
-        <div class="col-sm-4 col-lg-3 mt-5 rounded   ms-4">
-          <div class="counter-box  border border-warning rounded">
+      <div class="row counter justify-content-center">
+        <!-- Project Completed Counter -->
+        <div class="col-sm-4 col-lg-3 mt-5 ms-4">
+          <div class="counter-box text-center shadow-lg">
             <div class="counter-ico">
-              <span class="ico-circle"><ion-icon name="checkmark-outline" class="fs-3 text-warning p-2 rounded-circle shadow-lg fw-bold"></ion-icon></span>
+              <ion-icon name="checkmark-outline" class="icon"></ion-icon>
             </div>
             <div class="counter-num">
               <p id="projectCounter" class="counter">0</p>
@@ -684,29 +733,35 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-lg-3 mt-5  rounded  ms-4">
-          <div class="counter-box  border border-warning rounded">
+      
+        <!-- Experience Counter -->
+        <div class="col-sm-4 col-lg-3 mt-5 ms-4">
+          <div class="counter-box text-center shadow-lg">
             <div class="counter-ico">
-              <span class="ico-circle"><ion-icon name="rocket" class="fs-3 text-warning p-2 rounded-circle shadow-lg fw-bold"></ion-icon></span>
+              <ion-icon name="rocket" class="icon"></ion-icon>
             </div>
             <div class="counter-num">
               <p id="experienceCounter" class="counter">0</p>
-              <span class="counter-text">YEARS OF EXPERIENCE</span>
+              <span class="counter-text">EXPERIENCE</span>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-lg-3 mt-5  rounded  ms-4">
-          <div class="counter-box  border border-warning rounded">
+      
+        <!-- Total Websites Counter -->
+        <div class="col-sm-4 col-lg-3 mt-5 ms-4">
+          <div class="counter-box text-center shadow-lg">
             <div class="counter-ico">
-              <span class="ico-circle"><ion-icon name="link" class="fs-3 text-warning p-2 rounded-circle shadow-lg fw-bold"></ion-icon></span>
+              <ion-icon name="link" class="icon"></ion-icon>
             </div>
             <div class="counter-num">
               <p id="websiteCounter" class="counter">0</p>
-              <span class="counter-text">TOTAL Website </span>
+              <span class="counter-text">TOTAL WEBSITES</span>
             </div>
           </div>
         </div>
       </div>
+      
+      
       
       <script>
         function animateCounter(id, start, end, duration) {
