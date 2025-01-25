@@ -1,64 +1,17 @@
 body {
-    background: transparent;
+    background-color: transparent; 
     font-family: 'Arial', sans-serif; 
     text-align: center; 
-    margin: 0;
+    margin: 0px;
     font-style: italic;
-}
 
-
-main{
-    width:80% !important;
-    margin-left: 150px !important;
-    overflow: hidden;
 }
-header{
-    overflow:hidden;
-}
-.navbar-custom{
-    border-radius: 50px !important;
-}
-
-@media  (max-width:667px) {
-    main{
-        width: 100% !important;
-        margin-left: 0px !important;
-        background-color: white !important;
-    }
-    .nav-link{
-        color:#f9f4f4 !important;
-        float: center !important;
-        display: flex !important;
-        width: 100% !important;
-        text-align: left !important;
-        
-    }
-    .navbar{
-        background-color: rgb(15, 14, 14) !important;
-    }
-   .nav-item{
-    display: flex !important;
-   }
-   .social_info{
-    margin-left: -10px !important;
-   }
-   .nav-link::after {
-    width:10% !important;
-   }
-
-   
-    
-}
-
 
 .nav-link{
     text-decoration: none; /* pehle underline hatawe */
     color: black; /* original color set kela */
     position: relative; /* underline sathi */
   }
-
- 
-
   
   .nav-link::after {
     content: ""; 
@@ -67,47 +20,24 @@ header{
     height: 2px; /* underline height */
     left: 0;
     bottom: -2px; /* underline thodi khali set keli */
-    background-color: rgb(222, 220, 215);
+    background-color: orange;
     transform: scaleX(0); /* pehle zero scale set kela */
     transform-origin: left;
     transition: transform 0.3s ease; /* animation effect */
   }
-
- .nav-link1:hover{
-    color:rgb(34, 200, 245) !important;
- 
-  }
-
-
-
   
   .nav-link:hover::after {
     transform: scaleX(1); /* hover jhalyavar underline full hotil */
     
     
   }
-  .icon1{
-    background-color:rgb(39, 38, 38) !important;
-    color: white !important;
-    border-radius: 5px !important;
-    padding: 10px !important;
-    padding-bottom: 5px !important;
-    box-shadow: 0px 0px 5px 0px rgb(235, 233, 233);
-    margin-top: 10px;
-
-
-}
 
 .icon1:hover{
-    background-color:rgb(57, 60, 61) !important;
+    background-color:F89809 !important;
     color: white !important;
     border-radius: 5px !important;
-    padding: 10px !important;
-    padding-bottom: 5px !important;
+    padding: 5px 10px 5px 10px !important;
     box-shadow: 0px 0px 5px 0px dimgrey;
-    margin-top: 10px;
-
-
 
 
 }
@@ -117,9 +47,10 @@ header{
 .h12 {
     font-weight: bold;
     font-family: 'Barlow', sans-serif;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     color: transparent;
-    font-size: 20px; /* Adjust font size */
+    -webkit-text-fill-color: transparent; /* Fill color */
+    font-size: 90px; /* Adjust font size */
     animation: animateH1 5s ease-in-out infinite; /* Apply animation */
     font-style: italic !important;
     text-align: center; 
@@ -128,17 +59,10 @@ header{
 }
 @media(max-width:667px){
     .h12{
-        font-size: 20px; /* Adjust font size */
+        font-size: 50px; /* Adjust font size */
         
 
 
-    }
-    .h11{
-        font-size: 10px;
-
-    }
-    .navbar-brand{
-        display: inline-block;
     }
 }
 
@@ -158,22 +82,15 @@ header{
 }
 
 .h11 {
-    font-size: 30px; /* Adjust font size */
+    font-size: 100px; /* Adjust font size */
     font-weight: 800;
     font-family: 'Barlow', sans-serif;
     -webkit-text-fill-color: transparent;
     z-index: 987865;
     text-align: center;
-    text-shadow: 2px 0px 0px rgb(10, 119, 214) !important;
+    text-shadow: 2px 0px 0px rgb(66, 44, 233) !important;
     animation: animateH11 5s ease-in-out infinite; /* Apply animation */
 }
-.btn_info:hover{
-    color: white  !important;
-    background-color:rgb(57, 60, 61) !important;
-    border: white !important;
-
-}
-
 
 
 
@@ -232,86 +149,6 @@ animation: bounceIn 1.5s ease-in-out;
 100% {
     opacity: 1;
 }
-}
-.line{
-    height: 80px;
-    width: 4px;
-    background-color: rgb(109, 143, 222);
-    border-radius:5px;
-}
-.line {
-    height: 80px; /* Fixed height */
-    width: 5px;
-    background-color: rgb(15, 16, 17);
-    border-radius: 5px;
-    animation: rotate 1s linear infinite; /* Infinite rotation animation */
-}
-.high_school3{
-    margin-top:100px;
-    margin-left: 20px !important;
-
-}
-
-.vertical_line {
-    width: 2px;
-    height: 100%;
-    background-color: #9ee2f0;
-    margin: 0 auto;
-  }
-
-  @media(max-width:667px){
-    .high_school{
-        position:relative;
-        bottom:460px;
-        left:0px !important;
-
-    }
-    .high_school1{
-        position:relative;
-        bottom:130px;
-        left:0px !important;
-
-    }
-    .vertical_line{
-        display: none;
-    }
-    .frontend{
-        margin-top: -120px !important;
-    }
-    .high_school3{
-        position:relative;
-        bottom:460px;
-        left: 0px !important;;
-
-    }
-    .full{
-        margin-top:190px;
-
-    }
- 
-  }
-  .card:hover {
-    transform: translateY(-5px);
-    transition: all 0.3s ease-in-out;
-  }
-  
-
-/* Keyframes for rotation */
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg); /* Initial position */
-    }
-    100% {
-        transform: rotate(360deg); /* Full rotation */
-    }
-}
-
-@media(max-width:667px){
-    .line{
-        /* display: none !important; */
-        margin-left:180px !important;
-        margin-top:20px !important ;
-    }
 }
 
 
@@ -536,9 +373,7 @@ transform: scale(1); /* Full size */
     }
     
     #aboutText {
-        color: #f1ebeb;
-        font-size:15px;
-        font-weight:bold;
+        color: #333;
     }
     
     #readMoreBtn {
@@ -656,174 +491,57 @@ transform: scale(1); /* Full size */
 }
 
 
-.counter-box {
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    padding: 30px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
 
-  .counter-box:hover {
-    transform: translateY(-10px);
-  }
+<section id="experience" style="overflow:hidden">
+    <div class="container mb-5">
+        <div class="row ">
+            <div class="col-md-12 mt-3">
+                <h3 class="mt-5 text-dark fw-bold text-center">Experience</h3>
 
-  .counter-ico {
-    margin-bottom: 15px;
-  }
+                <p class="text-center text-primary mt-3">
+                    "Skilled in developing responsive web applications, designing intuitive user interfaces, and optimizing backend functionalities."
+                </p>
+            </div>
+        </div>
 
-  .counter-ico i {
-    font-size: 40px;
-    color: #007bff;
-  }
 
-  .counter-num p {
-    font-size: 36px;
-    font-weight: bold;
-    margin: 0;
-    color: #333;
-  }
+        <div class="experience p-3 pb-5 mt-2">
 
-  .counter-text {
-    font-size: 16px;
-    color: #666;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
+        <div class="row  mt-5">
+            <div class="col-md-3">
+                <p class="text-warning ms-5 text-center">15/01/2024 - 01/03/2024</p>
+            </div>
+            <div class="col-md-9 text-center">
+                <p class="text-secondary">Frontend Developer Intern - A2Z Infotech & A2Z IT Hub Pvt. Ltd.</p>
+                <button class="btn btn-warning text-white" id="toggle-details-1">View in details |→</button>
 
-  /* Counter animation */
-  .counter {
-    animation: fadeIn 1s ease-in-out;
-  }
+                <!-- Hidden details for first experience -->
+                <div id="details-1" class="mt-2" style="display: none;">
+                    <p class="text-secondary">
+                        During this internship, I focused on frontend development, working with HTML, CSS, JavaScript, and React to create user-friendly interfaces and responsive designs.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: scale(0.8);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  @media(max-width:667px){
-      .counter{
-          padding-left:0px !important;
-      }
-      .counter-box{
-          width: 80%;
+        <!-- Second Experience -->
+        <div class="row mt-3">
+            <div class="col-md-3 ">
+                <p class="text-warning ms-5 text-center">05/03/2024 - 30/09/2024</p>
+            </div>
+            <div class="col-md-9 text-center">
+                <p class="text-secondary">Full Stack Python Developer - A2Z Infotech & A2Z IT Hub Pvt. Ltd.</p>
+                <button class="btn btn-warning text-white" id="toggle-details-2">View in details |→ </button>
 
-      }
-  }
+                <!-- Hidden details for second experience -->
+                <div id="details-2" class="mt-2" style="display: none;">
+                    <p class="text-secondary">
+                        As a Full Stack Python Developer, I was involved in both frontend and backend development using Python, Django, React, and more. Worked on optimizing web functionalities and building full-stack applications.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-  .counter-box {
-          background-color: #f8f9fa;
-          border-radius: 10px;
-          padding: 30px;
-          text-align: center;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          transition: transform 0.3s ease;
-        }
-      
-        .counter-box:hover {
-          transform: translateY(-10px);
-        }
-      
-        .counter-ico {
-          margin-bottom: 15px;
-        }
-      
-        .counter-ico i {
-          font-size: 40px;
-          color: #007bff;
-        }
-      
-        .counter-num p {
-          font-size: 36px;
-          font-weight: bold;
-          margin: 0;
-          color: #333;
-        }
-      
-        .counter-text {
-          font-size: 16px;
-          color: #666;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-        }
-      
-        /* Counter animation */
-        .counter {
-          animation: fadeIn 1s ease-in-out;
-        }
-      
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: scale(0.8);
-          }
-          to {
-            opacity: 1;
-            transform: scale(1);
-          }
-        }
-        @media(max-width:667px){
-            .counter{
-                padding-left:0px !important;
-            }
-            .counter-box{
-                width: 80%;
-
-            }
-        }
-
-       
-        /* Card Styling */
-        .education-card {
-          background: #ffffff;
-          border-radius: 15px;
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .education-card:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        }
-        
-        .education-card h5 {
-          font-size: 1.5rem;
-          color: #e7b052;
-          font-weight: 600;
-        }
-        
-        .education-card h6 {
-          font-size: 1.2rem;
-          color: #555;
-        }
-        
-        .education-card p {
-          font-size: 0.9rem;
-          color: #777;
-        }
-        
-        /* Icon Styling */
-        .icon {
-          color: #efb358;
-          margin-bottom: 15px;
-          transition: transform 0.3s ease, color 0.3s ease;
-          font-size:35px;
-        }
-        
-        .education-card:hover .icon {
-          transform: scale(1.2);
-          color: #fadd6b;
-        }
-        
-        /* Media Queries */
-        @media (max-width: 768px) {
-          .education-card {
-            margin-bottom: 20px;
-          }
-        }
-        
+    </div>
+    </div>
+</section>
