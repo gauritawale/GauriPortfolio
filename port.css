@@ -34,7 +34,7 @@ header{
         
     }
     .navbar{
-        background-color: rgb(15, 14, 14) !important;
+        background-color: rgb(234, 104, 104) !important;
     }
    .nav-item{
     display: flex !important;
@@ -593,14 +593,11 @@ transform: scale(1); /* Full size */
 
     @media (max-width:667px) {
         .demo_images{
-            margin-left: -30px !important;
-            width: 120% !important;
-            height: 100% !important;
-            margin-top: 0px !important;
+            padding-bottom:50px !important;
             /* display: none !important; */
         }
         .demo_button{
-            margin-top: -40px !important;
+            margin-top: -70px !important;
         }
         .certify{
             /* width: 20px !important; */
@@ -617,6 +614,7 @@ transform: scale(1); /* Full size */
 
 
     }
+   
 
     .certificates{
         box-shadow: 0px 0px 5px 0px gray;
