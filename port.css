@@ -4,6 +4,7 @@ body {
     text-align: center; 
     margin: 0;
     font-style: italic;
+    overflow-x: hidden !important;
 }
 
 
